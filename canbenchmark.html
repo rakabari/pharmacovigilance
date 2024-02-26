@@ -5,40 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableau Dashboard</title>
     <style>
+        /* Ensure the tableauPlaceholder div is sized to fit the dashboard as intended */
         .tableauPlaceholder {
-            width: 100%; /* Adjust width as needed */
-            height: auto; /* Height will be set by the script */
-            margin: auto;
+            width: 100%; /* This will make the dashboard responsive, adjusting to the width of the viewport */
+            height: 927px; /* Set a specific height to accommodate the dashboard size; adjust as necessary */
+            position: relative; /* Position relative to allow for proper scaling and placement */
+            margin: auto; /* Center the dashboard within its container */
         }
     </style>
 </head>
 <body>
-    <div class='tableauPlaceholder' id='viz1706484621636'>
+    <!-- New Tableau dashboard placeholder with updated settings for full visibility -->
+    <div class='tableauPlaceholder' id='viz1708905338040'>
         <noscript>
             <a href='#'>
-                <img alt='Canbenchmark 1935 - Present' src='https://public.tableau.com/static/images/CA/CANBENCHMARK_1935to2023/Canbenchmark1935-Present/1_rss.png' style='border: none' />
+                <img alt='CANBENCHMARKS' src='https://public.tableau.com/static/images/Ca/Canbenchmarks/CANBENCHMARKS/1_rss.png' style='border: none' />
             </a>
         </noscript>
         <object class='tableauViz' style='display:none;'>
             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
             <param name='embed_code_version' value='3' />
-            <param name='path' value='views/CANBENCHMARK_1935to2023/Canbenchmark1935-Present?:language=en-US&:embed=true&publish=yes' />
+            <param name='site_root' value='' />
+            <param name='name' value='Canbenchmarks/CANBENCHMARKS' />
+            <param name='tabs' value='no' />
             <param name='toolbar' value='yes' />
-            <param name='static_image' value='https://public.tableau.com/static/images/CA/CANBENCHMARK_1935to2023/Canbenchmark1935-Present/1.png' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Ca/Canbenchmarks/CANBENCHMARKS/1.png' />
             <param name='animate_transition' value='yes' />
             <param name='display_static_image' value='yes' />
             <param name='display_spinner' value='yes' />
             <param name='display_overlay' value='yes' />
             <param name='display_count' value='yes' />
             <param name='language' value='en-US' />
-            <param name='filter' value='publish=yes' />
         </object>
     </div>
     <script type='text/javascript'>
-        var divElement = document.getElementById('viz1706484621636');
+        var divElement = document.getElementById('viz1708905338040');
         var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width = '100%';
-        vizElement.style.height = (divElement.offsetWidth * 0.50) + 'px';
+        if (divElement.offsetWidth > 800) { // Ensuring that the dashboard scales for wider screens
+            vizElement.style.width='100%';
+            vizElement.style.height='927px'; // Maintain fixed height as per the provided dimensions
+        } else {
+            vizElement.style.width='100%';
+            vizElement.style.height=(divElement.offsetWidth * 0.75) + 'px'; // Adjust height proportionally for smaller screens
+        }
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
