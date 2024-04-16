@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Canbenchmarks</title>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Tableau Visualization</title>
+    <style>
         /* Ensure the tableauPlaceholder div is sized to fit the dashboard as intended */
         .tableauPlaceholder {
             width: 100%; /* This will make the dashboard responsive, adjusting to the width of the viewport */
-            height: 927px; /* Set a specific height to accommodate the dashboard size; adjust as necessary */
+            height: auto; /* Set height to auto to adjust based on content */
             position: relative; /* Position relative to allow for proper scaling and placement */
             margin: auto; /* Center the dashboard within its container */
         }
     </style>
 </head>
 <body>
-<!-- New Tableau dashboard placeholder with updated settings for full visibility -->
-<div class="tableauPlaceholder" id="viz1712686195691" style="position: relative">
-<noscript>
-<a href="#">
-<img alt="Canbenchmarks_OLD " src="https://public.tableau.com/static/images/Ca/Canbenchmarks/canbenchmarks/1_rss.png" style="border: none"/>
-</a>
-</noscript>
-<object class="tableauViz" style="display:none;">
-<param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
-<param name="embed_code_version" value="3"/>
-<param name="site_root" value=""/>
-<param name="name" value="Canbenchmarks/canbenchmarks"/>
-<param name="tabs" value="no"/>
-<param name="toolbar" value="yes"/>
-<param name="static_image" value="https://public.tableau.com/static/images/Ca/Canbenchmarks/canbenchmarks/1.png"/>
-<param name="animate_transition" value="yes"/>
-<param name="display_static_image" value="yes"/>
-<param name="display_spinner" value="yes"/>
-<param name="display_overlay" value="yes"/>
-<param name="display_count" value="yes"/>
-<param name="language" value="en-US"/>
-<param name="filter" value="publish=yes"/>
-</object>
-</div>
-<script type="text/javascript">
-        var divElement = document.getElementById('viz1712686195691');
+    <!-- New Tableau dashboard placeholder with updated settings for full visibility -->
+    <div class='tableauPlaceholder' id='viz1713274258942' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Canbenchmarks' src='https://public.tableau.com/static/images/Ca/Canbenchmarks/Canbenchmarks/1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Canbenchmarks/Canbenchmarks' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Ca/Canbenchmarks/Canbenchmarks/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1713274258942');
         var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width='100%';
-        vizElement.style.height=(divElement.offsetWidth * 0.75) + 'px';
+        if (vizElement) {
+            vizElement.style.width = '100%'; // Make the width responsive to container size
+            vizElement.style.height = '795px'; // Set a fixed height
+        }
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
